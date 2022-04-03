@@ -26,7 +26,7 @@ export function createArrList(arr) {
         li.innerHTML = arr[i];
 
         li.addEventListener('mouseover', function (event) {
-            const element = event.target;
+            const element = event.currentTarget;
             element.setAttribute('title', element.innerHTML);
         });
 
